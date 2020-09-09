@@ -6,8 +6,12 @@
 
 ## Getting Started
 1. Clone this repository.
-2. Fetch all submodules.
-3. Configure, build and run! :tada:
+2.  ```
+    ./configure.sh
+    ./build.sh 
+    ./run.sh
+    ````
+3. Enjoy! :tada:
 
 ## Author
 - [Tjeu Foolen](https://github.com/tjeufoolen)
