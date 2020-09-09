@@ -1,7 +1,12 @@
 cmake_minimum_required(VERSION 3.18.0)
 
-project(CMakeTinyXML2 VERSION 0.1.0)
+project(CMakeTinyXML2 VERSION 0.1)
 
+configure_file(CMakeTinyXML2Config.h.in CMakeTinyXML2Config.h)
+
+add_executable(${PROJECT_NAME} main.cpp)
+
+target_include_directories(${PROJECT_NAME} PUBLIC ${PROJECT_BINARY_DIR})
 
 #           DOWNLOAD ALL THE SUBMODULES
 find_package(Git QUIET)
@@ -26,8 +31,6 @@ endif()
 
 
 add_subdirectory(external/tinyxml2)
-
-add_executable(${PROJECT_NAME} main.cpp)
 
 target_include_directories(${PROJECT_NAME} 
     PUBLIC external/tinyxml2

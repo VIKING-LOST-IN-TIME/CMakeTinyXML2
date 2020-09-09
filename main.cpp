@@ -1,8 +1,11 @@
 #include <iostream>
 #include <tinyxml2.h>
+#include <CMakeTinyXML2Config.h>
 
 int main(int argc, char* argv[])
 {
+	std::cout << argv[0] << " Version " << CMakeTinyXML2_VERSION_MAJOR << "." << CMakeTinyXML2_VERSION_MINOR << std::endl;
+
     const char* filename = "resources/team.xml";
 
 	tinyxml2::XMLDocument doc;
