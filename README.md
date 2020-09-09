@@ -6,7 +6,8 @@
 
 ## Getting Started
 1. Clone this repository.
-2.  ```
+2. Execute the following commands:
+    ```
     ./configure.sh
     ./build.sh 
     ./run.sh
